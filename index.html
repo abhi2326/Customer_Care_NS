@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calki Newton School | Student Care Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Calki Newton School</p>
+        <h1>Customer Care Chatbot</h1>
+        <p class="lede">
+          Get instant, policy-accurate answers about attendance, assignments,
+          projects, placements, finance, and more. Powered by the official NS
+          support playbook.
+        </p>
+        <div class="hero-actions">
+          <button id="startChat" class="primary">Start chatting</button>
+          <a href="#knowledge" class="secondary">Browse quick answers</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="card-label">Service Hours</p>
+        <p class="card-value">24 × 7</p>
+        <p class="card-meta">Response time &lt; 5 seconds</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="support-promise">
+        <article>
+          <h3>Always on policy</h3>
+          <p>Answers reference Newton School’s latest escalation matrix.</p>
+        </article>
+        <article>
+          <h3>Escalation ready</h3>
+          <p>
+            When self-service cannot help, students see the right team and next
+            step.
+          </p>
+        </article>
+        <article>
+          <h3>Human-friendly</h3>
+          <p>
+            Clear, actionable responses with direct references to portal
+            sections.
+          </p>
+        </article>
+      </section>
+
+      <section class="chat-wrapper">
+        <div class="chat-container">
+          <div class="chat-header">
+            <div>
+              <p class="chat-title">Calki · Student Care Assistant</p>
+              <p class="chat-subtitle">Trained on Newton School FAQs</p>
+            </div>
+            <span class="status-dot" aria-label="online"></span>
+          </div>
+          <div id="chatMessages" class="chat-messages" role="log"></div>
+          <form id="chatForm" class="chat-input" autocomplete="off">
+            <input
+              type="text"
+              id="chatPrompt"
+              name="prompt"
+              placeholder="Ask about attendance, projects, finance..."
+              aria-label="Chat message"
+              required
+            />
+            <button type="submit" class="primary">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="knowledge" class="knowledge">
+        <header>
+          <h2>Quick Topics</h2>
+          <p>Jump straight to the most-requested student support workflows.</p>
+        </header>
+        <div id="quickTopics" class="knowledge-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Need more help? Email
+        <a href="mailto:support@newtonschool.co">support@newtonschool.co</a>
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
